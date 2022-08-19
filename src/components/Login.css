@@ -1,0 +1,9 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Container input {
+  margin-bottom: 10px;
+}
