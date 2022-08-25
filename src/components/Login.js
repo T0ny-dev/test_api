@@ -30,7 +30,7 @@ function Login () {
           <label htmlFor="e-mail"><b>Email</b></label>
           <input role="inputEmail" type="text" placeholder="Enter e-mail" name="email" required value={email1} onChange={(e)=> setEmail(e.target.value)}></input>
           <label htmlFor="id-discord"><b>Id Discord</b></label>
-          <input  role="nputDiscord" id="discordid1" type="text" placeholder="Enter id discord" name="id-discord" required value={discordId1} onChange={(e)=> setdiscordId(e.target.value)}></input>
+          <input  role="inputDiscord" id="discordid1" type="text" placeholder="Enter id discord" name="id-discord" required value={discordId1} onChange={(e)=> setdiscordId(e.target.value)}></input>
           <button  role="inputButton" id ="submit1" type="submit">Login</button>
         </form>
       }
