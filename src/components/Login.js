@@ -11,7 +11,7 @@ function Login () {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("el formulario ha sido enviado")
+    console.log("el formulario ha sido enviado")
       axios.post(`https://ms-discord-upy5mhs63a-rj.a.run.app/auth/login`,{'email': `${email1}`, 'discordId':`${discordId1}`} )
       .then((response) => {
         console.log(response);
