@@ -26,11 +26,11 @@ function Login () {
       {
         logged ? <div data-testid="welcome">Hello are you logged</div> : 
         <form className='Container' onSubmit={handleSubmit}>
-          <label htmlFor="e-maill"><b>Email</b></label>
-          <input type="text" placeholder="Enter e-mail" name="email" required value={email1} onChange={(e)=> setEmail(e.target.value)}></input>
+          <label htmlFor="e-mail"><b>Email</b></label>
+          <input role={emailsent} type="text" placeholder="Enter e-mail" name="email" required value={email1} onChange={(e)=> setEmail(e.target.value)}></input>
           <label htmlFor="id-discord"><b>Id Discord</b></label>
-          <input  type="text" placeholder="Enter id discord" name="id-discord" required value={discordId1} onChange={(e)=> setdiscordId(e.target.value)}></input>
-          <button  type="submit">Login</button>
+          <input  role={discord} id="discordid1" type="text" placeholder="Enter id discord" name="id-discord" required value={discordId1} onChange={(e)=> setdiscordId(e.target.value)}></input>
+          <button  role={button} id ="submit1" type="submit">Login</button>
         </form>
       }
     </div>
