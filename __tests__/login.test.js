@@ -6,9 +6,9 @@ import Login from '../src/components/Login'
 
 test ('render button submit', async () => {
   render(<Login />);
-  const getsubmit = screen.getByRole('emailsent');
-  const getEmail = screen.getByRole('discord');
-  const getDiscord = screen.getByRole('button')
+  const getsubmit = screen.getByRole('inputEmail');
+  const getEmail = screen.getByRole('inputDiscord');
+  const getDiscord = screen.getByRole('inputButton')
   
 
   userEvent.type(getEmail, 'actinver7@gmail.com');
